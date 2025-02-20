@@ -17,15 +17,16 @@ public class TwoSum {
         }
         public static void main(String[] args){
         
-            Scanner s = new Scanner(System.in);
-            System.out.println("Enter the array size: ");
-            int n = s.nextInt(0);
-            int[] nums = new int[n];
-            for(int i = 0 ;i < n; i++){
-                nums[i] = s.nextInt();
+            try (Scanner s = new Scanner(System.in)) {
+                System.out.println("Enter the array size: ");
+                int n = s.nextInt(0);
+                int[] nums = new int[n];
+                for(int i = 0 ;i < n; i++){
+                    nums[i] = s.nextInt();
+                }
+                System.out.println("Enter the target value: ");
+                int target = s.nextInt();
+                System.out.println(twoSum(nums, target, n));
             }
-            System.out.println("Enter the target value: ");
-            int target = s.nextInt();
-            System.out.println(twoSum(nums, target, n));
     }
 }
