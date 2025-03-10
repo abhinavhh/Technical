@@ -1,4 +1,4 @@
-package Tree;
+package StudyPlan.Tree;
 
 import java.util.Scanner;
 
