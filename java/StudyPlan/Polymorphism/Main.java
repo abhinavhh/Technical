@@ -18,11 +18,11 @@ class Dog extends Animal{
 }
 public class Main {
     public static void main(String[] args){
-        Dog d = new Dog();
-        Pig p = new Pig();
-        Animal a = new Animal();
+        Animal a = new Dog();
         a.sound();
-        p.sound();
-        d.sound();
+        a = new Pig();
+        a.sound();
+        a = new Animal();
+        a.sound();
     }
 }
